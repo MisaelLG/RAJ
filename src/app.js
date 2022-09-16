@@ -12,6 +12,7 @@ const app = express();
 app.set('view engine', 'ejs')
 
 app.use(morgan('dev'));
+app.use(express.json())
 
 
 app.get('/', (req, res) =>{
