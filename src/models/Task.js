@@ -1,13 +1,13 @@
 import {Schema, model} from "mongoose";
 
-const productSchema = new Schema({
+const taskSchema = new Schema({
     name: String,
     category: String,
-    price: Number,
-    imgURL:String,
+    description: String,
+    
     },{
         timestamps:true,
         versionKey:false
     })
 
-    export default model ('Product', productSchema)
+    export default model ('Task', taskSchema)

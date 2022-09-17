@@ -3,7 +3,7 @@ import morgan from "morgan";
  
 
 
-import productsRoutes from "./routes/products.routes"
+import productsRoutes from "./routes/task.routes"
 const app = express();
 
 
@@ -19,6 +19,6 @@ app.get('/', (req, res) =>{
     res.render(__dirname+ '/views/initial.ejs')
 })
 
-app.use('/products',productsRoutes)
+app.use('/task',productsRoutes)
 
 export default app
